@@ -26,5 +26,5 @@ New-AzureRmWebApp `
     -ResourceGroupName $resGroupName `
     -Location $location `
     -AppServicePlan $appServicePlan.ServerFarmWithRichSkuName `
-    -Name "bpm-projects-api-app" `
+    -Name "bpm-projects-api" `
     -Verbose

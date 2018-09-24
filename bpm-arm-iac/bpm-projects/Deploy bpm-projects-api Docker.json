@@ -1,0 +1,317 @@
+{
+    "source": 2,
+    "revision": 5,
+    "description": null,
+    "createdBy": {
+        "displayName": "Eliecer Hernandez",
+        "url": "https://app.vssps.visualstudio.com/Acc617a59-3828-4492-a84f-7736c396d375/_apis/Identities/09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+        "_links": {
+            "avatar": {
+                "href": "https://dev.azure.com/ioet-bpm/_apis/GraphProfile/MemberAvatars/aad.MDlkMGU3NmQtYzVlYy03NDY3LTg2ZjQtOWQ5MmJhOWIzNzRl"
+            }
+        },
+        "id": "09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+        "uniqueName": "ehernandez@azureioet.onmicrosoft.com",
+        "imageUrl": "https://dev.azure.com/ioet-bpm/_api/_common/identityImage?id=09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+        "descriptor": "aad.MDlkMGU3NmQtYzVlYy03NDY3LTg2ZjQtOWQ5MmJhOWIzNzRl"
+    },
+    "createdOn": "2018-09-21T14:47:29.203Z",
+    "modifiedBy": {
+        "displayName": "Eliecer Hernandez",
+        "url": "https://app.vssps.visualstudio.com/Acc617a59-3828-4492-a84f-7736c396d375/_apis/Identities/09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+        "_links": {
+            "avatar": {
+                "href": "https://dev.azure.com/ioet-bpm/_apis/GraphProfile/MemberAvatars/aad.MDlkMGU3NmQtYzVlYy03NDY3LTg2ZjQtOWQ5MmJhOWIzNzRl"
+            }
+        },
+        "id": "09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+        "uniqueName": "ehernandez@azureioet.onmicrosoft.com",
+        "imageUrl": "https://dev.azure.com/ioet-bpm/_api/_common/identityImage?id=09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+        "descriptor": "aad.MDlkMGU3NmQtYzVlYy03NDY3LTg2ZjQtOWQ5MmJhOWIzNzRl"
+    },
+    "modifiedOn": "2018-09-21T15:00:02.733Z",
+    "isDeleted": false,
+    "variables": {},
+    "variableGroups": [],
+    "environments": [
+        {
+            "id": 2,
+            "name": "Deploy to production",
+            "rank": 1,
+            "owner": {
+                "displayName": "Eliecer Hernandez",
+                "url": "https://app.vssps.visualstudio.com/Acc617a59-3828-4492-a84f-7736c396d375/_apis/Identities/09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+                "_links": {
+                    "avatar": {
+                        "href": "https://dev.azure.com/ioet-bpm/_apis/GraphProfile/MemberAvatars/aad.MDlkMGU3NmQtYzVlYy03NDY3LTg2ZjQtOWQ5MmJhOWIzNzRl"
+                    }
+                },
+                "id": "09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+                "uniqueName": "ehernandez@azureioet.onmicrosoft.com",
+                "imageUrl": "https://dev.azure.com/ioet-bpm/_api/_common/identityImage?id=09d0e76d-c5ec-6467-86f4-9d92ba9b374e",
+                "descriptor": "aad.MDlkMGU3NmQtYzVlYy03NDY3LTg2ZjQtOWQ5MmJhOWIzNzRl"
+            },
+            "variables": {},
+            "variableGroups": [],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 4
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 5
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 6
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": [
+                                {
+                                    "artifactItems": [],
+                                    "alias": "_bpm-projects-api-Docker container-CI-CD",
+                                    "artifactType": "Build",
+                                    "artifactDownloadMode": "All"
+                                }
+                            ]
+                        },
+                        "queueId": 26,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Linux Agent",
+                    "workflowTasks": [
+                        {
+                            "environment": {},
+                            "taskId": "497d490f-eea7-4f2b-ab94-48d9c1acdcb1",
+                            "version": "4.*",
+                            "name": "Deploy bpm-projects-api to Azure Web App Container",
+                            "refName": "",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "ConnectionType": "AzureRM",
+                                "ConnectedServiceName": "de2d0d96-fad4-4c03-a259-cd2bc099caac",
+                                "PublishProfilePath": "$(System.DefaultWorkingDirectory)/**/*.pubxml",
+                                "PublishProfilePassword": "",
+                                "WebAppKind": "webAppContainer",
+                                "WebAppName": "bpm-projects-api",
+                                "DeployToSlotOrASEFlag": "false",
+                                "ResourceGroupName": "",
+                                "SlotName": "production",
+                                "DockerNamespace": "bpmprojects.azurecr.io",
+                                "DockerRepository": "$(Build.Repository.Name):$(Build.BuildId)",
+                                "DockerImageTag": "latest",
+                                "VirtualApplication": "",
+                                "Package": "$(System.DefaultWorkingDirectory)/**/*.zip",
+                                "RuntimeStack": "",
+                                "StartupCommand": "gunicorn -w 4 -b 0.0.0.0:8000 run:app",
+                                "ScriptType": "",
+                                "InlineScript": ":: You can provide your deployment commands here. One command per line.",
+                                "ScriptPath": "",
+                                "WebConfigParameters": "",
+                                "AppSettings": "",
+                                "ConfigurationSettings": "",
+                                "UseWebDeploy": "false",
+                                "DeploymentType": "webDeploy",
+                                "TakeAppOfflineFlag": "false",
+                                "SetParametersFile": "",
+                                "RemoveAdditionalFilesFlag": "false",
+                                "ExcludeFilesFromAppDataFlag": "false",
+                                "AdditionalArguments": "",
+                                "RenameFilesFlag": "false",
+                                "XmlTransformation": "false",
+                                "XmlVariableSubstitution": "false",
+                                "JSONFiles": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": false,
+                "badgeEnabled": true,
+                "autoLinkWorkItems": true,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "ReleaseStarted",
+                    "conditionType": 1,
+                    "value": ""
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 0,
+                "url": "https://vsrm.dev.azure.com/ioet-bpm/53b8ced8-7634-483b-bf19-342d77b2f07a/_apis/Release/releases/0",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {
+                "dataSourceBindings": [
+                    {
+                        "dataSourceName": "AzureRMWebAppNamesByType",
+                        "parameters": {
+                            "WebAppKind": "$(WebAppKind)"
+                        },
+                        "endpointId": "$(ConnectedServiceName)",
+                        "target": "WebAppName"
+                    }
+                ]
+            },
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGates": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://vsrm.dev.azure.com/ioet-bpm/_apis/public/Release/badge/53b8ced8-7634-483b-bf19-342d77b2f07a/2/2"
+        }
+    ],
+    "artifacts": [
+        {
+            "sourceId": "53b8ced8-7634-483b-bf19-342d77b2f07a:7",
+            "type": "Build",
+            "alias": "_bpm-projects-api-Docker container-CI-CD",
+            "definitionReference": {
+                "artifactSourceDefinitionUrl": {
+                    "id": "https://dev.azure.com/ioet-bpm/_permalink/_build/index?collectionId=4ac41c51-1572-4440-90bc-aebc5087ff4f&projectId=53b8ced8-7634-483b-bf19-342d77b2f07a&definitionId=7",
+                    "name": ""
+                },
+                "defaultVersionBranch": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionSpecific": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionTags": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionType": {
+                    "id": "latestType",
+                    "name": "Latest"
+                },
+                "definition": {
+                    "id": "7",
+                    "name": "bpm-projects-api-Docker container-CI-CD"
+                },
+                "project": {
+                    "id": "53b8ced8-7634-483b-bf19-342d77b2f07a",
+                    "name": "bpm-projects-api"
+                }
+            },
+            "isPrimary": true,
+            "isRetained": false
+        }
+    ],
+    "triggers": [
+        {
+            "artifactAlias": "_bpm-projects-api-Docker container-CI-CD",
+            "triggerConditions": [
+                {
+                    "sourceBranch": "azure-pipelines",
+                    "tags": [],
+                    "useBuildDefinitionBranch": false,
+                    "createReleaseOnBuildTagging": false
+                },
+                {
+                    "sourceBranch": "master",
+                    "tags": [],
+                    "useBuildDefinitionBranch": false,
+                    "createReleaseOnBuildTagging": false
+                }
+            ],
+            "triggerType": 1
+        }
+    ],
+    "releaseNameFormat": "Release-$(rev:r)",
+    "tags": [],
+    "properties": {
+        "DefinitionCreationSource": {
+            "$type": "System.String",
+            "$value": "Other"
+        }
+    },
+    "id": 2,
+    "name": "Deploy bpm-projects-api Docker",
+    "path": "\\",
+    "projectReference": null,
+    "url": "https://vsrm.dev.azure.com/ioet-bpm/53b8ced8-7634-483b-bf19-342d77b2f07a/_apis/Release/definitions/2",
+    "_links": {
+        "self": {
+            "href": "https://vsrm.dev.azure.com/ioet-bpm/53b8ced8-7634-483b-bf19-342d77b2f07a/_apis/Release/definitions/2"
+        },
+        "web": {
+            "href": "https://dev.azure.com/ioet-bpm/53b8ced8-7634-483b-bf19-342d77b2f07a/_release?definitionId=2"
+        }
+    }
+}
