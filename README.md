@@ -9,8 +9,15 @@ Here is located the Infrastructure as Code of the project to work with Azure Res
 1. You need [PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-powershell?view=powershell-6) installed in your operative system.
 1. Install the [AzureRM](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-6.8.1#install-the-azure-powershell-module) module installed
    ```PS
-    Install-Module -Name AzureRM
+    Install-Module -Name AzureRM -Force
    ``` 
+   o el NetCore para Sistemas operativos no Windows
+
+   ```PS
+    Install-Module -Name AzureRM.Netcore
+   ```
+
+   You can also install the [lastest version of Azure CLI](https://docs.microsoft.com/en-gb/cli/azure/install-azure-cli?view=azure-cli-latest) on your OS.
 
 ### How to run
 1. Run powershell: `pwsh`
